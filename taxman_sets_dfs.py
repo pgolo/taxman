@@ -39,7 +39,7 @@ def play(g):
         green[n] = play(green[n])
     return g
 
-numbers = set(range(1, int(input('Pot size: '))))
+numbers = set(range(1, int(input('Pot size: ')) + 1))
 
 # factors for each number in a pot
 factors = {a: {b for b in numbers if b != a and a % b == 0} for a in numbers}
